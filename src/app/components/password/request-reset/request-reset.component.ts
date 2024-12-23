@@ -7,8 +7,10 @@ import { SnotifyService } from 'ng-snotify';
   templateUrl: './request-reset.component.html',
   styleUrls: ['./request-reset.component.css']
 })
-export class RequestResetComponent implements OnInit {
-  public form = {
+export class RequestResetComponent implements OnInit 
+{
+  public form = 
+  {
     email: null
   };
 
@@ -34,5 +36,4 @@ export class RequestResetComponent implements OnInit {
     this.Notify.success(res.data,{timeout:0});
     this.form.email = null;
   }
-
 }
