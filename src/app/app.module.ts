@@ -17,7 +17,6 @@ import { AuthService } from './Services/auth.service';
 import { AfterLoginService } from './Services/after-login.service';
 import { BeforeLoginService } from './Services/before-login.service';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
-
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TaskManagerComponent } from './components/task-manager/task-manager.component';
