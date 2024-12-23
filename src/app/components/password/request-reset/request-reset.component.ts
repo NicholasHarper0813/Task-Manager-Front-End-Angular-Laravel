@@ -18,10 +18,10 @@ export class RequestResetComponent implements OnInit {
     private Notify: SnotifyService
     ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  onSubmit() {
+  onSubmit() 
+  {
     this.Notify.info('Wait...', {timeout:5000});
     this.Connector.sendPasswordResetLink(this.form).subscribe(
       data => this.handleResponse(data),
@@ -29,7 +29,8 @@ export class RequestResetComponent implements OnInit {
     );
   }
 
-  handleResponse(res) {
+  handleResponse(res) 
+  {
     this.Notify.success(res.data,{timeout:0});
     this.form.email = null;
   }
